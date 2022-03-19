@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Arshad Azad</title>
+    <link>/categories/tools/</link>
+    <description>Recent content in Tools on Arshad Azad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Mar 2022 10:58:07 +0530</lastBuildDate><atom:link href="/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using OpenRefine</title>
+      <link>/post/2022/03/19/using-openrefine/</link>
+      <pubDate>Sat, 19 Mar 2022 10:58:07 +0530</pubDate>
+      
+      <guid>/post/2022/03/19/using-openrefine/</guid>
+      <description>Problem(s) at hand The survey data has responses which are not systematic and requires interpretation. It contains spelling mistakes, has non-meaningful characters and data is simply not tidy.
+Resources  The Carpentries have provided an amazing introduction to OpenRefine install and use OpenRefine. This manualcould be useful when one delves deeper into the use Sometimes, stackoverflow could also be useful.  </description>
+    </item>
+    
+  </channel>
+</rss>
