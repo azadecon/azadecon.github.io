@@ -25,32 +25,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>Bullhorn</title>
-      <link>/categories/bullhorn/</link>
-      <pubDate>Mon, 23 Apr 2012 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/bullhorn/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>/categories/blog/</link>
-      <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Code</title>
-      <link>/categories/code/</link>
-      <pubDate>Mon, 23 Jan 2012 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/code/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
