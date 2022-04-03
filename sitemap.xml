@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/</loc>
+    <lastmod>2022-03-26T20:23:56+05:30</lastmod>
+  </url><url>
+    <loc>/post/2022/03/26/on-complexity-economics/</loc>
+    <lastmod>2022-03-26T20:23:56+05:30</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2022-03-26T20:23:56+05:30</lastmod>
+  </url><url>
     <loc>/tags/blog/</loc>
     <lastmod>2022-03-25T11:27:01+05:30</lastmod>
   </url><url>
@@ -17,13 +26,7 @@
     <loc>/categories/economics/</loc>
     <lastmod>2022-03-25T11:27:01+05:30</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2022-03-25T11:27:01+05:30</lastmod>
-  </url><url>
     <loc>/tags/markdown/</loc>
-    <lastmod>2022-03-25T11:27:01+05:30</lastmod>
-  </url><url>
-    <loc>/post/</loc>
     <lastmod>2022-03-25T11:27:01+05:30</lastmod>
   </url><url>
     <loc>/tags/</loc>
