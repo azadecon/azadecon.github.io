@@ -13,8 +13,7 @@
       <pubDate>Sun, 24 Apr 2022 22:25:37 +0530</pubDate>
       
       <guid>/post/2022/04/24/some-r-commands/</guid>
-      <description>Counting the occurance of individuals values in a variable. df_merged_labour %&amp;gt;% select(xss) %&amp;gt;% group_by(xss) %&amp;gt;% count()
- </description>
+      <description>Counting the occurance of individuals values in a variable. df_merged_labour %&amp;gt;% select(xss) %&amp;gt;% group_by(xss) %&amp;gt;% count()  </description>
     </item>
     
     <item>
