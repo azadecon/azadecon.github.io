@@ -13,7 +13,7 @@
       <pubDate>Sun, 24 Apr 2022 22:25:37 +0530</pubDate>
       
       <guid>/post/2022/04/24/some-r-commands/</guid>
-      <description>Counting the occurance of individuals values in a variable. df_merged_labour %&amp;gt;% select(xss) %&amp;gt;% group_by(xss) %&amp;gt;% count()  </description>
+      <description>Counting the occurance of individuals values in a variable. df_merged_labour %&amp;gt;% select(xss) %&amp;gt;% group_by(xss) %&amp;gt;% count() convert a vector into comma separated character vector rs &amp;lt;- paste(&amp;#34;\&amp;#34;&amp;#34;,as.character(vector),&amp;#34;\&amp;#34;&amp;#34;,collapse=&amp;#34;, &amp;#34;,sep=&amp;#34;&amp;#34;) cat(rs) </description>
     </item>
     
     <item>
