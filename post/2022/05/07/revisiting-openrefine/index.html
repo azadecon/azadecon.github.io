@@ -77,9 +77,9 @@
 <p>When it comes to data, they come in various shapes and sizes. One special case is of cleaning textual data. Though it does not have to be qualitative in the likes of interviews which are detailed and is not within the scope of the tool used here. OpenRefine could be useful to clean data that has some structure, as in they are columnar. But within this restriction, they are somewhat messy.</p>
 <p>The survey data had responses which were not systematic and required interpretation. It contained spelling mistakes, had non-meaningful characters and data was not tidy. I have used OpenRefine to clean the data, at least for the primary steps. Thereafter I have imported the (somewhat) cleaned data in R for further cleaning and analysis.</p>
 <p><strong><a href="https://librarycarpentry.org/lc-open-refine/">Library carpentry</a></strong> provides an excellent guide to install and to get a basic training on OpenRefine.</p>
-<h2 id="additional-comments-to-install-openrefine">Additional comments to install OpenRefine</h2>
+<h2 id="additional-comments-to-install-openrefine-on-linux">Additional comments to install OpenRefine (on Linux)</h2>
 <ol>
-<li>Downalod tar.giz from the website (or from the projeect zip)</li>
+<li>Downalod tar.giz from the <strong><a href="https://openrefine.org/download.html">OpenRefine website</a></strong></li>
 <li>Install JAVA by <code>sudo apt install default-jre</code></li>
 <li>Extract OpenRefine.xxx.tar.giz into a folder and run <code>./refine</code> from the OpenRefine folder.</li>
 </ol>
@@ -91,7 +91,7 @@
 <p>Try to extract maximum information possible while translating. Do not assume anything, do not infer more than what is provided. Do not take decisions at the stage of translation. At times it is tempting to infer a particular meaning of the responses but this should be avoided. Let such decision be left for the stage of analysis. For now only only a minimal change in the meaning should be employed.</p>
 </li>
 <li>
-<p>Most common and useful features are going to be text-facet, text-filter, cluster, merge, edit cells, transform. Sometimes in that particular order.</p>
+<p>Most common and useful features are going to be &ldquo;text-facet&rdquo;, &ldquo;text-filter&rdquo;, &ldquo;cluster&rdquo;, &ldquo;merge&rdquo;, &ldquo;edit cells&rdquo;, &ldquo;transform&rdquo;. Sometimes in that particular order.</p>
 </li>
 <li>
 <p>The most used snippet of code used is <code>value.replace(&quot;old_value&quot;, &quot;new_value&quot;)</code>. For example, if you have values <code>school</code> among others and you want to replace them with <code>india</code>. You can do so by using value.replace(&ldquo;school&rdquo;, &ldquo;india&rdquo;). Now if you have values <code>schooling</code> and <code>school</code> among others and you want to replace both of them with <code>india</code> and if you replace <code>school</code> first then you are going to be left with <code>india</code> and <code>indiaing</code>. Why? Order matters here. To execute a sensible replacement, it is better to follow a non-conflicting order. You should replace <code>schooling</code> first, followed by <code>school</code>. This principle makes sense with R as well. <code>Value replacemt</code> also works subsequently. The above replacement can be carried out as follows: <code>value.replace(&quot;schooling&quot;, &quot;india&quot;).replace(&quot;school&quot;, &quot;india&quot;)</code></p>
@@ -103,7 +103,7 @@
 <p>Since OpenRefine uses (default) browser interface, it is advisable to use a separate one so that you do not clutter your workspace.</p>
 </li>
 <li>
-<p>Also, do not kill the background OpenRefine process (terminal window) that might lead to data loss.</p>
+<p>Also, do not kill the background OpenRefine process (the terminal window). It might lead to data loss.</p>
 </li>
 <li>
 <p>Additionally, it helps to increase the maximum heap size from the default one. On an 8 GB machine, 3-4 GB is ideal.</p>
