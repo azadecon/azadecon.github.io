@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2022-04-24T22:25:37+05:30</lastmod>
+    <lastmod>2022-05-07T05:49:16+05:30</lastmod>
   </url><url>
     <loc>/post/</loc>
-    <lastmod>2022-04-24T22:25:37+05:30</lastmod>
+    <lastmod>2022-05-07T05:49:16+05:30</lastmod>
+  </url><url>
+    <loc>/post/2022/05/07/revisiting-openrefine/</loc>
+    <lastmod>2022-05-07T05:49:16+05:30</lastmod>
   </url><url>
     <loc>/post/2022/04/24/some-r-commands/</loc>
     <lastmod>2022-04-24T22:25:37+05:30</lastmod>

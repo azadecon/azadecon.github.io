@@ -6,7 +6,16 @@
     <description>Recent content in Home on Arshad Azad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Apr 2022 22:25:37 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 May 2022 05:49:16 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Revisiting OpenRefine</title>
+      <link>/post/2022/05/07/revisiting-openrefine/</link>
+      <pubDate>Sat, 07 May 2022 05:49:16 +0530</pubDate>
+      
+      <guid>/post/2022/05/07/revisiting-openrefine/</guid>
+      <description>What is OpenRefine and why use it: When it comes to data, they come in various shapes and sizes. One special case is of cleaning textual data. Though it does not have to be qualitative in the likes of interviews which are detailed and is not within the scope of the tool used here. OpenRefine could be useful to clean data that has some structure, as in they are columnar. But within this restriction, they are somewhat messy.</description>
+    </item>
+    
     <item>
       <title>Some R commands</title>
       <link>/post/2022/04/24/some-r-commands/</link>

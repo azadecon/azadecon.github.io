@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple, minimal blog for those who love text.">
+    <title>Revisiting OpenRefine | Arshad Azad</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/theme-override.css">
+    <header>
+
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="/">~/arshad azad</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/categories/">~/categories</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/tags/">~/tags</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="https://azadecon.github.io/cv.pdf">~/cv</a>
+      </li>
+      
+
+      
+      
+      <li class="pull-right">
+        <a href="/index.xml">~/subscribe</a>
+      </li>
+      
+
+    </ul>
+  </nav>
+</header>
+
+  </head>
+
+  <body>
+    <br/>
+
+<div class="article-meta">
+<h1><span class="title">Revisiting OpenRefine</span></h1>
+<h2 class="author">Arshad</h2>
+<h2 class="date">2022/05/07</h2>
+<p class="terms">
+  
+  
+  
+  
+  
+</p>
+</div>
+
+
+<div class="content-wrapper">
+  <main>
+    <h2 id="what-is-openrefine-and-why-use-it">What is OpenRefine and why use it:</h2>
+<p>When it comes to data, they come in various shapes and sizes. One special case is of cleaning textual data. Though it does not have to be qualitative in the likes of interviews which are detailed and is not within the scope of the tool used here. OpenRefine could be useful to clean data that has some structure, as in they are columnar. But within this restriction, they are somewhat messy.</p>
+<p>The survey data had responses which were not systematic and required interpretation. It contained spelling mistakes, had non-meaningful characters and data was not tidy. I have used OpenRefine to clean the data, at least for the primary steps. Thereafter I have imported the (somewhat) cleaned data in R for further cleaning and analysis.</p>
+<p><strong><a href="https://librarycarpentry.org/lc-open-refine/">Library carpentry</a></strong> provides an excellent guide to install and to get a basic training on OpenRefine.</p>
+<h2 id="additional-comments-to-install-openrefine">Additional comments to install OpenRefine</h2>
+<ol>
+<li>Downalod tar.giz from the website (or from the projeect zip)</li>
+<li>Install JAVA by <code>sudo apt install default-jre</code></li>
+<li>Extract OpenRefine.xxx.tar.giz into a folder and run <code>./refine</code> from the OpenRefine folder.</li>
+</ol>
+<p><strong><a href="https://docs.openrefine.org/">OpenRefine use manual</a></strong> could be helpful when one delves deeper into the use.</p>
+<p>Cleaning textual data might seem daunting and you would not know from where to begin. This is further complicated by the presence of full sentences, even more with half sentences and contextual, conversational responses. It is advisable to see the data (in most cases, a particular column) as a whole. What worked for me was to imagine myself interviewing the farmers. This is done by looking at only the unique values present in the column and not the every entry. Now that you have an idea about what kind of responses are there, this knowledge helps interpret the individual responses. This as a whole knowledge helps contextualise the incomplete and at times weird responses.</p>
+<p>Example: <code>Aapke paas kya bank khata hai?</code> ==&gt; <code>Haan</code>; <code>ModiWala</code>; <code>Free wala</code>; <code>Bank mitra banwa diya tha, lekin Istemal nahi karte</code>. All these responses are affirmative but they are different in their information content. Which brings us to the next part of cleaning. The cleaning.</p>
+<ol>
+<li>
+<p>Try to extract maximum information possible while translating. Do not assume anything, do not infer more than what is provided. Do not take decisions at the stage of translation. At times it is tempting to infer a particular meaning of the responses but this should be avoided. Let such decision be left for the stage of analysis. For now only only a minimal change in the meaning should be employed.</p>
+</li>
+<li>
+<p>Most common and useful features are going to be text-facet, text-filter, cluster, merge, edit cells, transform. Sometimes in that particular order.</p>
+</li>
+<li>
+<p>The most used snippet of code used is <code>value.replace(&quot;old_value&quot;, &quot;new_value&quot;)</code>. For example, if you have values <code>school</code> among others and you want to replace them with <code>india</code>. You can do so by using value.replace(&ldquo;school&rdquo;, &ldquo;india&rdquo;). Now if you have values <code>schooling</code> and <code>school</code> among others and you want to replace both of them with <code>india</code> and if you replace <code>school</code> first then you are going to be left with <code>india</code> and <code>indiaing</code>. Why? Order matters here. To execute a sensible replacement, it is better to follow a non-conflicting order. You should replace <code>schooling</code> first, followed by <code>school</code>. This principle makes sense with R as well. <code>Value replacemt</code> also works subsequently. The above replacement can be carried out as follows: <code>value.replace(&quot;schooling&quot;, &quot;india&quot;).replace(&quot;school&quot;, &quot;india&quot;)</code></p>
+</li>
+</ol>
+<h2 id="some-additional-tips-on-using-openrefine">Some additional tips on using OpenRefine.</h2>
+<ol>
+<li>
+<p>Since OpenRefine uses (default) browser interface, it is advisable to use a separate one so that you do not clutter your workspace.</p>
+</li>
+<li>
+<p>Also, do not kill the background OpenRefine process (terminal window) that might lead to data loss.</p>
+</li>
+<li>
+<p>Additionally, it helps to increase the maximum heap size from the default one. On an 8 GB machine, 3-4 GB is ideal.</p>
+</li>
+<li>
+<p>Some raw datafiles (section 3 in particular) are quite big and it would take a lot time to process each modifications. Which leads to slow data cleaning. It is advisable to load only a small portion of raw data. (Tip by Meghna)</p>
+</li>
+</ol>
+
+    <a href="/"> >> Home</a>
+  </main>
+</div>
+    <footer>
+      
+<script>
+(function() {
+  function center_el(tagName) {
+    var tags = document.getElementsByTagName(tagName), i, tag;
+    for (i = 0; i < tags.length; i++) {
+      tag = tags[i];
+      var parent = tag.parentElement;
+      
+      if (parent.childNodes.length === 1) {
+        
+        if (parent.nodeName === 'A') {
+          parent = parent.parentElement;
+          if (parent.childNodes.length != 1) continue;
+        }
+        if (parent.nodeName === 'P') parent.style.textAlign = 'center';
+      }
+    }
+  }
+  var tagNames = ['img', 'embed', 'object'];
+  for (var i = 0; i < tagNames.length; i++) {
+    center_el(tagNames[i]);
+  }
+})();
+</script>
+
+      
+      <hr/>
+      Arshad Azad | <a href="https://github.com/azadecon">Github</a> | <a href="https://twitter.com/saidbyarshad">Twitter</a>
+      
+    </footer>
+  </body>
+</html>
+
