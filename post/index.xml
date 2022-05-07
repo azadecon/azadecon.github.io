@@ -13,7 +13,8 @@
       <pubDate>Sat, 07 May 2022 05:49:16 +0530</pubDate>
       
       <guid>/post/2022/05/07/revisiting-openrefine/</guid>
-      <description>What is OpenRefine and why use it: When it comes to data, they come in various shapes and sizes. One special case is of cleaning textual data. Though it does not have to be qualitative in the likes of interviews which are detailed and is not within the scope of the tool used here. OpenRefine could be useful to clean data that has some structure, as in they are columnar. But within this restriction, they are somewhat messy.</description>
+      <description>What is OpenRefine and why use it: (A detailed multi-part post series is to follow this summary post.)
+When it comes to data, they come in various shapes and sizes. One special case is of cleaning textual data. Though it does not have to be qualitative in the likes of interviews which are detailed and is not within the scope of the tool used here. OpenRefine could be useful to clean data that has some structure, as in they are columnar.</description>
     </item>
     
     <item>
