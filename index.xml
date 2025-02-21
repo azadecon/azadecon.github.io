@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arshad Azad</title>
+    <link>https://example.org/</link>
+    <description>Recent content on Arshad Azad</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Feb 2025 08:52:51 +0530</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New</title>
+      <link>https://example.org/posts/new/</link>
+      <pubDate>Fri, 21 Feb 2025 08:52:51 +0530</pubDate>
+      <guid>https://example.org/posts/new/</guid>
+      <description>&lt;h1 id=&#34;this-is-new&#34;&gt;This is new&lt;/h1&gt;</description>
+    </item>
+  </channel>
+</rss>
