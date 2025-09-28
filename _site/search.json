@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Arshad Azad",
+    "section": "",
+    "text": "I am an Economist1 but this page is mostly about the tools and cool things I come across.\nThese days I am interested in:\n\nWebR: Magic that runs R in your Browser.\n\nnice documentation\na demo by ever amazing DJ Navarro\n\nAPI discovery2\n\na demo describing how I go about it\n\nCool packages to work with Big (ish) data sets:- fst, arrow"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "Arshad Azad",
+    "section": "",
+    "text": "I am an Economist1 but this page is mostly about the tools and cool things I come across.\nThese days I am interested in:\n\nWebR: Magic that runs R in your Browser.\n\nnice documentation\na demo by ever amazing DJ Navarro\n\nAPI discovery2\n\na demo describing how I go about it\n\nCool packages to work with Big (ish) data sets:- fst, arrow"
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Arshad Azad",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nneeds citation (read PhD)↩︎\nfun fact: I recently scraped 44 million observations using arrow, future, and plain old httr.↩︎"
+  },
+  {
+    "objectID": "demos/demo-webR.html",
+    "href": "demos/demo-webR.html",
+    "title": "webR CSV Demo",
+    "section": "",
+    "text": "This example loads demo.csv from the data folder, injects it into webR’s in-browser filesystem, and runs R code on it."
+  },
+  {
+    "objectID": "demos/demo-webR.html#webr-app-with-preloaded-csv",
+    "href": "demos/demo-webR.html#webr-app-with-preloaded-csv",
+    "title": "webR CSV Demo",
+    "section": "",
+    "text": "This example loads demo.csv from the data folder, injects it into webR’s in-browser filesystem, and runs R code on it."
+  },
+  {
+    "objectID": "demo-webR.html",
+    "href": "demo-webR.html",
+    "title": "webR CSV Demo",
+    "section": "",
+    "text": "This example loads demo.csv from the data folder, injects it into webR’s in-browser filesystem, and runs R code on it."
+  },
+  {
+    "objectID": "demo-webR.html#webr-app-with-preloaded-csv",
+    "href": "demo-webR.html#webr-app-with-preloaded-csv",
+    "title": "webR CSV Demo",
+    "section": "",
+    "text": "This example loads demo.csv from the data folder, injects it into webR’s in-browser filesystem, and runs R code on it."
+  },
+  {
+    "objectID": "demos/game.html",
+    "href": "demos/game.html",
+    "title": "Tic-Tac-Toe with webR",
+    "section": "",
+    "text": "You are X. AI is O.\n\n\n# Load the game logic and set up the board\nsource(\"./tictactoe.R\")"
+  },
+  {
+    "objectID": "demos/game.html#tic-tac-toe-webr-only",
+    "href": "demos/game.html#tic-tac-toe-webr-only",
+    "title": "Tic-Tac-Toe with webR",
+    "section": "",
+    "text": "You are X. AI is O.\n\n\n# Load the game logic and set up the board\nsource(\"./tictactoe.R\")"
+  }
+]

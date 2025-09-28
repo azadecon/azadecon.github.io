@@ -1,0 +1,15 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "azadecon"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: demos/webr-csv-demo.qmd
+        text: webR Demo
+    right:
+      - href: https://github.com/azadecon/azadecon.github.io
+        text: Source

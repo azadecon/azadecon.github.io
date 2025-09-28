@@ -1,0 +1,6 @@
+"0","library(dplyr)
+ptax_df <- read.csv(""./demo.csv"") %>% select(-X)
+head(ptax_df)"
+"2","'webr' is not recognized as an internal or external command,
+operable program or batch file.
+"

@@ -1,0 +1,19 @@
+---
+title: "Arshad Azad"
+---
+
+## 
+
+I am an Economist^[needs citation (read PhD)] but this page is mostly about the tools and cool things I come across.
+
+These days I am interested in:
+
+- WebR: Magic that runs R in your Browser.
+
+  - [nice documentation](https://docs.r-wasm.org/webr/latest/)
+  - a demo by ever amazing [DJ Navarro](https://blog.djnavarro.net/posts/2023-04-09_webr/)
+  
+- API discovery^[fun fact: I recently scraped 44 million observations using _arrow_, _future_, and plain old _httr_.]
+  - a [demo](demo-webR.html) describing how I go about it
+
+- Cool packages to work with Big (ish) data sets:- _[fst](https://www.fstpackage.org/)_, _[arrow](https://r4ds.hadley.nz/arrow.html)_

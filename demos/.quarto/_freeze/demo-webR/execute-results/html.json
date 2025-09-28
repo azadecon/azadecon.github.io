@@ -1,0 +1,17 @@
+{
+  "hash": "195f6e53d59d66436d62db33b6d307cf",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"webR CSV Demo\"\nformat: live-html\nengine: knitr\nresources:\n  - demo.csv\nwebr:\n  render-df: gt-interactive\n  packages:\n    - dplyr\n    - ggplot2\n    - ggfixest\n    - fixest\n  \n---\n\n\n\n## webR app with preloaded CSV\n\nThis example loads `demo.csv` from the `data` folder, injects it into webR's in-browser filesystem, and runs R code on it.\n\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n```{webr}\nlibrary(dplyr)\nptax_df <- read.csv(\"./demo.csv\") %>% select(-X)\nhead(ptax_df)\n```\n:::\n",
+    "supporting": [
+      "demo-webR_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "demo-webR.html",
+    "href": "demo-webR.html",
+    "title": "webR CSV Demo",
+    "section": "",
+    "text": "This example loads demo.csv from the data folder, injects it into webR’s in-browser filesystem, and runs R code on it."
+  },
+  {
+    "objectID": "demo-webR.html#webr-app-with-preloaded-csv",
+    "href": "demo-webR.html#webr-app-with-preloaded-csv",
+    "title": "webR CSV Demo",
+    "section": "",
+    "text": "This example loads demo.csv from the data folder, injects it into webR’s in-browser filesystem, and runs R code on it."
+  },
+  {
+    "objectID": "game.html",
+    "href": "game.html",
+    "title": "Tic-Tac-Toe with webR",
+    "section": "",
+    "text": "You are X. AI is O.\n\n\n# Load the game logic and set up the board\nsource(\"./tictactoe.R\")"
+  },
+  {
+    "objectID": "game.html#tic-tac-toe-webr-only",
+    "href": "game.html#tic-tac-toe-webr-only",
+    "title": "Tic-Tac-Toe with webR",
+    "section": "",
+    "text": "You are X. AI is O.\n\n\n# Load the game logic and set up the board\nsource(\"./tictactoe.R\")"
+  }
+]

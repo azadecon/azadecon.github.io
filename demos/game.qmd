@@ -1,0 +1,28 @@
+---
+title: "Tic-Tac-Toe with webR"
+format: live-html
+engine: knitr
+resources:
+  - tictactoe.R
+webr:
+  packages: []
+---
+
+## 🎮 Tic-Tac-Toe (webR Only)
+
+You are **X**. AI is **O**.
+
+---
+
+```{r}
+# Load the game logic and set up the board
+source("./tictactoe.R")
+
+
+```
+
+```{webr}
+# Display current board
+cat("Current Board:\n\n")
+cat(print_board(.global_board))
+```
